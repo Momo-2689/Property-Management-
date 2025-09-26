@@ -1,14 +1,16 @@
 from pydantic import BaseModel
 
 class MaintenanceBase(BaseModel):
-    name: str
-    address: str
+    issue: str
+    tenant_id: int
+    property_id: int
 
 class MaintenanceCreate(MaintenanceBase):
     pass
 
 class Maintenance(MaintenanceBase):
     id: int
+    status: str
 
     class Config:
         orm_mode = True
