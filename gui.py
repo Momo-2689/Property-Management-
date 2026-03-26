@@ -68,7 +68,7 @@ address_entry = tk.Entry(form_frame, width=30)
 name_entry.grid(row=0, column=1)
 address_entry.grid(row=1, column=1)
 
-add_btn = tk.Button(root, text="Add Mock Property", command=add_mock_property)
+add_btn = tk.Button(root, text="AddProperty", command=add_mock_property)
 add_btn.pack(pady=10)
 
 fetch_properties()
